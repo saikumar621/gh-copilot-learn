@@ -88,9 +88,40 @@ section h3 {
 }
 
 .activity-card .participants ul {
-  list-style-type: disc;
-  padding-left: 20px;
+  list-style-type: none;
+  padding-left: 0;
   margin: 0;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+.participant-item + .participant-item {
+  margin-top: 6px;
+}
+
+.participant-email {
+  color: #333;
+  word-break: break-all;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background-color: rgba(198, 40, 40, 0.08);
 }
 
 .form-group {
